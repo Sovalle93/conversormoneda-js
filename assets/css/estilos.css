@@ -1,0 +1,45 @@
+body{
+    background-color: #212529;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+#convert{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    margin: 24%;
+    margin-top: 2%;
+    width: 50rem;
+    background-color: #6c757d;
+    color: white;
+}
+
+select{
+    width: 45%;
+    height: 2rem;
+}
+
+input{
+    width: 45%;
+    height: 2rem;
+}
+
+button{
+    background-color: #31d2f2;
+    color: white;
+    width: 30%;
+    height: 2rem;
+    border: #31d2f2 solid 2px;
+    border-style: outset;
+}
+
+#myChart{
+    display: flex;
+    margin-top: -20%;
+    margin-left: 25%;
+    max-width: 50%;
+}
