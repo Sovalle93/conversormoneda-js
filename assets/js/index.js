@@ -38,7 +38,6 @@ async function updateCurrencyConversion() {
 button.addEventListener("click", updateCurrencyConversion);
 
 
-
 async function getDataforChart(endpoint1, endpoint2) {
     try {
         const apiUrl = `https://mindicador.cl/api/${endpoint1}`;
@@ -84,7 +83,7 @@ async function renderGrafica(currencyCode) {
         } else if (currencyCode === "euro") {
             await getDataforChart("euro", "fecha");
         } else {
-            console.error("Invalid currency code");
+            console.error("Codigo de moneda invalido");
         }
     } catch (error) {
         console.error(error);
