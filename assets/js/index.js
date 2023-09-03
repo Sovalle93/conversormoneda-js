@@ -23,7 +23,7 @@ async function updateCurrencyConversion() {
                 let inputValue = parseFloat(inputField.value);
                 let exchangeRate = currencyInfo.valor;
                 let resultValue = inputValue / exchangeRate;
-                resultSpan.textContent = `${inputValue} ${currencyInfo.nombre} = ${resultValue.toFixed(2)} CLP`;
+                resultSpan.textContent = `${inputValue} CLP = ${resultValue.toFixed(2)} ${currencyInfo.nombre}`;
             } else {
                 resultSpan.textContent = "Tipo de cambio no encontrado";
             }
@@ -36,6 +36,7 @@ async function updateCurrencyConversion() {
 }
 
 button.addEventListener("click", updateCurrencyConversion);
+
 
 
 async function getDataforChart(endpoint1, endpoint2) {
